@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    padding: 35px 0;
+}
+
+.pink,
+.blue {
+    padding: 20px;
+    min-height: 200px;
+    color: white;
+    font-size: 28px;
+}
+
+.pink{
+    background-color: fuchsia;
+    float: left;
+}
+.blue{
+    background-color: blue;
+    float: right;
+
+}
+
+.line{
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    margin:10px 0;
+
+}
+
+.card::before,
+.card::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width:70px;
+    background-color: black;
+    margin: 10px 0;
+}
